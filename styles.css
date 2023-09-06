@@ -1,0 +1,236 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+}
+/* the above font was set as standard, then amended for specific sections of the website */
+
+header {
+    background-color: #1b1e18;
+    color: #fffdfa;
+    padding: 5px 0;
+}
+
+.h2 {
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    font-size: 20px; 
+    text-decoration: none;
+    color: #fffdfa;
+    margin: 0 15px; 
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fffdfa;
+    transition: color 0.3s; 
+}
+
+
+nav ul li a:hover {
+    color: #00f; 
+}
+
+.brand {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.center-image img {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.central-section {
+    display: flex;
+    justify-content: center;
+    background-color: lightgray; 
+    padding: 20px;
+}
+
+.location, .reviews {
+    padding: 20px;
+    text-align: center;
+    background-color: #fffdfa; 
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.menu-item img {
+    max-width: 100%;
+    width: 200px; 
+    height: auto; 
+}
+
+.menu-item {
+    background-color: #fffdfa;
+    border: 1px solid #1b1e18;
+    padding: 20px;
+    text-align: center;
+}
+
+footer { 
+    background-color: #1b1e18;
+    color: #fffdfa;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+.copywrite {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.external-links a {
+    font-size: 20px;
+    text-decoration: underline;
+    color: #fffdfa;
+    margin: 0 20px;
+}
+
+.external-links a:hover {
+    color: #00f;
+}
+
+.aboutus-header {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px; 
+    text-decoration: underline;
+    text-align: center;
+    color: #1b1e18;
+}
+
+.address {
+    text-align: left;
+}
+
+.about-us-image img {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 60%;
+    width: auto;
+    height: auto; 
+}
+
+.opening-hours, .opening-hours-h2 {
+    width: 50%;
+    margin: 0 auto; 
+    background-color: #fffafa; 
+    border-collapse: collapse; 
+    text-align: center;
+    border: 1px solid #1b1e18;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.opening-hours th, .opening-hours td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #1b1e18;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.about-content {
+    text-align: justify;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    font-size: 16px; 
+    line-height: 1.5; 
+    margin-left: auto;
+    margin-right: auto; 
+    max-width: 800px; 
+}
+
+/* Common styles for tablets and mobile */
+
+/* Add a media query for tablets and mobile devices */
+@media (max-width: 768px) {
+    nav ul li {
+        margin-right: 10px; /* Reduce margin for smaller screens */
+    }
+
+    .brand {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    /* Adjust font size for headings on smaller screens */
+    .aboutus-header {
+        font-size: 24px;
+    }
+
+    /* Adjust font size for external links on smaller screens */
+    .external-links a {
+        font-size: 16px;
+    }
+}
+
+/* Styles specific to mobile devices */
+
+/* Add a media query for small mobile devices */
+@media (max-width: 50%) {
+    /* Further reduce margins and padding for smaller screens */
+    nav ul li {
+        margin-right: 5px;
+    }
+
+    .brand {
+        padding: 5px;
+    }
+
+    /* Adjust font size for headings on smaller screens */
+    .aboutus-header {
+        font-size: 20px;
+    }
+
+    /* Adjust font size for external links on smaller screens */
+    .external-links a {
+        font-size: 14px;
+    }
+}
+
+.index-paragraph {
+    text-align: justify;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    font-size: 16px; 
+    line-height: 1.5; 
+    margin-left: auto; 
+    margin-right: auto; 
+    max-width: 800px; 
+}
+
+.menu-paragrahs {
+    text-align: justify;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    font-size: 16px; 
+    line-height: 1.5; 
+    margin-left: auto;
+    margin-right: auto; 
+    max-width: 800px; 
+}
+
+.subheading {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
